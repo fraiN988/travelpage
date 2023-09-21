@@ -1,12 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login</title>
 </head>
+
 <body>
-    
+    <header>
+        <a href="/homep.html"><img src="*" alt="Logo pic" width="400" style="align-self: left;"></a>
+        <nav id="navmain">
+            <a href="/pblog.html">Personal Blog</a> <a href="/travelform.html">Travel form</a>
+        </nav>
+        <nav id="loginnav">
+            <a href="/login.html">Login</a>
+        </nav>
+        <h1 style="text-align: center;">Travel agency</h1>
+    </header>
+    <form action="pblog.html">
+        <fieldset style="width: 200px;">
+            <legend>Please log in</legend>
+            <div>
+                <label for="uname">Username: </label> <br>
+                <input type="text" name="uname" id="uname" required placeholder="Enter username">
+            </div>
+            <div>
+                <label for="email">Email: </label> <br>
+                <input type="email" name="email" id="email" required placeholder="example@email.com">
+            </div>
+            <div>
+                <label for="pass">Password: </label> <br>
+                <input type="password" name="pass" id="pass" required placeholder="Enter password" minlength="5"
+                    maxlength="20">
+            </div>
+            <div>
+                <label for="cpass">Confirm password: </label> <br>
+                <input type="password" name="cpass" id="cpass" required placeholder="Re-enter password">
+            </div>
+            <br>
+            <div>
+                <button type="reset">
+                    Cancel
+                </button>
+
+                <button type="submit">
+                    Log in
+                </button>
+
+            </div>
+        </fieldset>
+    </form>
 </body>
+
 </html>
